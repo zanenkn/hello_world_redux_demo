@@ -4,7 +4,7 @@ import {Container, Header} from 'semantic-ui-react'
 const App = () => {
   return (
     <Container>
-    <Header as="h1">Hello World</Header>
+      <Header as="h1">Hello World</Header>
     </Container>
   )
 }
