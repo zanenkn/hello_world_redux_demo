@@ -8,10 +8,11 @@ const App = (props) => {
       <Header as="h1">{props.state.greeting}</Header>
       <Input
         placeholder='New greeting...'
+        onBlur={(event) => props.dispatch({ type: 'PROPOSE_GREETING', greeting: event.target.value})}
       />
       <Button
           primary
-          onClick={() => props.dispatch({ type: 'CHANGE_GREETING', greeting: 'Yo World, Wazzup' })}
+          onClick={() => props.dispatch({ type: 'CHANGE_GREETING'})}
       >
         Change greeting
       </Button>
