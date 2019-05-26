@@ -1,10 +1,11 @@
 import React from 'react'
+import {Container, Header} from 'semantic-ui-react'
 
 const App = () => {
   return (
-    <>
-    <p>yo!</p>
-    </>
+    <Container>
+    <Header as="h1">Hello World</Header>
+    </Container>
   )
 }
 
